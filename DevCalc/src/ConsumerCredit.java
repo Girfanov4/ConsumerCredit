@@ -11,7 +11,6 @@ public class ConsumerCredit extends Credit {
 		public void monthlyPayment() {
 			// TODO Автоматически созданная заглушка метода
 			
-			
 		}
 		
 	}
