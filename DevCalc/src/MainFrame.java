@@ -158,6 +158,11 @@ public class MainFrame extends JFrame {
 		btnNewButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
+				
+				ConsumerCredit ConsumerCredit =new ConsumerCredit();
+				Double _loanTermInYears = Double.parseDouble(loanTermInYears.getText());
+				ConsumerCredit.numberOfPayments(_loanTermInYears);
+				
 				List<Object> Details =DevCalc.getDetails(loanAmount.getText(),annualInterestRate.getText(),loanTermInYears.getText());
 				lblNewLabel_3.setText(Details.get(0).toString());
 				lblNewLabel_4.setText(Details.get(1).toString());

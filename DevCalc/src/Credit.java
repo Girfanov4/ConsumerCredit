@@ -9,9 +9,17 @@ public abstract class Credit {
 		monthlyInterestRate = annualInterestRate / 100 / 12;
 	};
 	
-	public abstract void numberOfPayments();
+	public abstract void numberOfPayments(Double loanAmount);
 	
 	public abstract void monthlyPayment();
+
+	public Integer getLoanTermInYears() {
+		return loanTermInYears;
+	}
+
+	public void setLoanTermInYears(Integer loanTermInYears) {
+		this.loanTermInYears = loanTermInYears;
+	}
 	
 	
 }
